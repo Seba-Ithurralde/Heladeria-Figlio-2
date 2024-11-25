@@ -6,6 +6,14 @@
     font-family: sans-serif;
 }
 
+.titulo
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    animation: titulo 2s ease-in-out;
+}
+
 p 
 {
     font-size: $tamaño-letra;
@@ -13,8 +21,9 @@ p
 
 .redes
 {
-    font-size: $tamaño-general;
+    font-size: $tamoño-general;
     margin-top: 20px;
+    margin-left: $marginleft;
 }
 
 
@@ -54,7 +63,7 @@ h1
     height: 250px;
     background-color: $color-negro;
     padding: $tamaño-imagen;
-    border-radius: 5px;
+    border-radius: 150px;
     box-shadow: 100px 10px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     animation: moviendoimagen 2s 1;
@@ -67,7 +76,7 @@ h1
     height: 250px;
     background-color: $color-negro;
     padding: $tamaño-imagen;
-    border-radius: 5px;
+    border-radius: 100px;
     box-shadow: 100px 10px 10px rgba(119, 114, 114, 0.2);
     margin-bottom: 20px;
     animation: moviendoimagen 2s 1;
@@ -203,3 +212,25 @@ nav ul li a:hover
     }   
 }
 
+@keyframes titulo
+{
+    0% 
+    {
+        color: gray;
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    75%
+    {
+        color: gray;
+    }
+
+    100% 
+    {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }   
+}

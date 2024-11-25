@@ -6,6 +6,14 @@
     font-family: sans-serif;
 }
 
+.titulo
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    animation: titulo 2s ease-in-out;
+}
+
 p 
 {
     font-size: $tamaño-letra;
@@ -17,7 +25,6 @@ p
    margin-top: $margintop;
    margin: $margin;
    margin-left: $marginleft;
-   animation: moviendoletras 2s 1;
 }
 
 .vainilla 
@@ -27,7 +34,6 @@ p
     margin-top: $margintop;
     margin: $margin;
     margin-left: $marginleft;
-    animation: moviendoletras 2s 1;
 }
 
 .frutilla 
@@ -37,7 +43,6 @@ p
     margin-top: $margintop;
     margin: $margin;
     margin-left: $marginleft;
-    animation: moviendoletras 2s 1;
 }
 
 .choco 
@@ -123,7 +128,6 @@ h1
     margin-right: 15px;
     margin-left: $marginleft;
     border: 3px solid black;
-    box-shadow: 100px 10px 10px rgba(0, 0, 0, 0.2);
     animation: moviendoimagen 2s 1;
 }
 
@@ -137,8 +141,7 @@ h1
     margin-right: 15px;
     margin-left: $marginleft;
     border: 3px solid gray;
-    box-shadow: 100px 10px 10px rgb(71, 70, 70);
-    animation: moviendoimagen2 2s 1;
+    animation: moviendoimagen 2s 1;
 }
 
 .foot 
@@ -227,14 +230,25 @@ h1
     }   
 }
 
-@keyframes moviendoimagen2
+@keyframes titulo
 {
     0% 
     {
-        transform: translateX(1000px);
+        color: gray;
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
+    
+    75%
+    {
+        color: gray;
+    }
+
     100% 
     {
-        transform: translateX(0px);
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }   
 }

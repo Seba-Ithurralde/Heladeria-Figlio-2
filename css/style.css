@@ -14,6 +14,14 @@ body
     min-height: 100vh;
 }
 
+.titulo
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    animation: titulo 2s ease-in-out;
+}
+
 p 
 {
     font-size: 20px;
@@ -45,28 +53,24 @@ h1
 
 .imagenes 
 {
-    background-color: black;
-    padding: 20px;
+    border: 3px solid black;
     border-radius: 5px;
     margin-bottom: 10px;
     float: left;
     margin-right: 15px;
     margin-left: 40px;
-    box-shadow: 100px 10px 10px rgba(0, 0, 0, 0.2);
     animation: moviendoimagen 2s 1;
 }
 
 .imagen 
 {
-    background-color: black;
-    padding: 20px;
+    border: 3px solid gray;
     border-radius: 5px;
     margin-bottom: 10px;
     float: left;
     margin-right: 15px;
     margin-left: 40px;
-    box-shadow: 100px 10px 10px rgb(51, 51, 51);
-    animation: moviendoimagen2 2s 1;
+    animation: moviendoimagen 2s 1;
 }
 
 .fb
@@ -74,9 +78,8 @@ h1
     margin: 5px;
     width: 250px;
     height: 250px;
-    background-color: black;
-    padding: 20px;
-    border-radius: 5px;
+    border: 3px solid black;
+    border-radius: 150px;
     box-shadow: 100px 10px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     animation: moviendoimagen 2s 1;
@@ -87,13 +90,10 @@ h1
     margin: 5px;
     width: 250px;
     height: 250px;
-    background-color: black;
-    padding: 20px;
-    border-radius: 5px;
+    border: 3px solid black;
+    border-radius: 100px;
     box-shadow: 100px 10px 10px rgba(119, 114, 114, 0.2);
-    margin-bottom: 20px;
     animation: moviendoimagen 2s 1;
-
 }
 
 .chocolate 
@@ -102,7 +102,7 @@ h1
    margin-top: 10px;
    margin: 20px;
    margin-left: 40px;
-   animation: moviendoletras 2s 1;
+   animation: fondoletras 2s 1;
 }
 
 .vainilla 
@@ -112,7 +112,7 @@ h1
     margin-top: 10px;
     margin: 20px;
     margin-left: 40px;
-    animation: moviendoletras 2s 1;
+    animation: fondoletras 2s 1;
 }
 
 .frutilla 
@@ -122,7 +122,7 @@ h1
     margin-top: 10px;
     margin: 20px;
     margin-left: 40px;
-    animation: moviendoletras 2s 1;
+    animation: fondoletras 2s 1;
 }
 
 .tamaño 
@@ -134,6 +134,7 @@ h1
 {
     font-size: 20px;
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .ing 
@@ -349,15 +350,26 @@ html
     }   
 }
 
-@keyframes moviendoletras
+@keyframes titulo
 {
     0% 
     {
-        transform: translateX(1000px);
+        color: gray;
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
+    
+    75%
+    {
+        color: gray;
+    }
+
     100% 
     {
-        transform: translateX(0px);
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }   
 }
 
