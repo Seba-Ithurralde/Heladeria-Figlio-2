@@ -105,6 +105,11 @@ h1
    animation: fondoletras 2s 1;
 }
 
+.texto-choco 
+{
+    color: gray;
+}
+
 .vainilla 
 {
     color: gray;
